@@ -14,14 +14,14 @@
         <input type="number" id="average_grade" placeholder="average grade"><br>
         <div>how much do you think you learned (hours)</div>
         <input type="number" id="hours_learned" placeholder="hours learned"><br>
-        <div>how much do you learn, on avarage (hours)</div>
+        <div>how much do you learn, on average (hours)</div>
         <input type="number" id="hours_average" placeholder="average hours learned"><br>
         <button type="button" id="submit_to_ai" onclick="start_ai()">submit</button>
     </form>
     <br>
     <div id="expected_grade">expected grade AI</div>
     <div id="result"></div>
-    <button title="change_color" onclick="changeColor()" id="change_color">change color</button>
+    <button title="change_color" onclick="changeColor()" id="change_color">change theme</button>
     <a href="https://buymeacoffee.com/ivocreator">buy me a coffee</a>
     
     <details id="details">
@@ -30,7 +30,11 @@
         cool website overvieuw: <a href="https://heegarthur.github.io/ivoarthur/">this</a><br>
         other cool website: <a href="https://heegarthur.github.io/tasks/">this</a><br>
         another cool website: <a href="https://heegarthur.github.io/spotify-wrapped/">this</a><br>
+        if you donate on the buy me a coffee link, €1 or more, and your name is acceptable. I will place your name on this website, at the end. if I don't e-mail me: ivoheeg@gmail.com
     </details>
+    <br>
+    <div>no donations yet</div>
+
     <script>
         function start_ai() {
             console.log('start ai')
@@ -226,7 +230,39 @@
             display: flex;
             align-items: center;
             margin: auto;
-            font-size: larger;
+            font-size:xx-large;
+            color: rgb(127, 178, 255);
+            transition: 1s;
+            animation: bling 10s ease-in-out;
+        }
+        a:hover{
+            color: rgb(226, 224, 81);
+            transform: scale(1.1);
+        }
+        div{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @keyframes bling {
+            0%{
+                color: rgb(185, 147, 40);
+                transform: scale(1.1);
+            }
+            25%{
+                color: rgb(216, 243, 255);
+            }
+            50%{
+                color: rgb(185, 147, 40);
+                transform: scale(1);
+            }
+            75%{
+                color: rgb(216, 243, 255);
+            }
+            100%{
+                color: rgb(185, 147, 40);
+                transform: scale(1.1)
+            }
 
         }
 
