@@ -75,15 +75,15 @@
 
 
         function getwebsite(){
+
+            let code = document.getElementById('tiktokcode').value;
+
             let permission = localStorage.getItem('permission');
             if(permission){
                 enterwebsite();
             }else{
-                let code = document.getElementById('tiktokcode').value;
-                const encryptedMessage = 'U2FsdGVkX1+MXjC438jwh3ye7IO9Aq7icGkHxipugIY=';
-                const enkey = 'theworstprogrammer!wannabedavidlaid#1';
-                const codereal = Crypto.AES.decrypt(encryptedMessage, enkey).toString(CryptoJS.enc.Utf8);
-                if(code == "eflBi0"){
+                
+                if(code == "solo-tu-highland"){
                     localStorage.setItem('permission', true); 
                     enterwebsite();
                 }else{
