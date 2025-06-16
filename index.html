@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
-    <br><div>no donations yet</div><br>
     <br><div id="expected_grade">expected grade AI</div><br>
     <form id="gradescalcubefore">
         <div>name of the subject</div>
@@ -22,7 +21,6 @@
         <button type="button" id="submit_to_ai" onclick="start_ai()">submit</button>
     </form>
     <br>
-    
     <div id="result"></div>
     <button title="change_color" onclick="changeColor()" id="change_color">change theme</button>
     <a href="https://buymeacoffee.com/ivocreator">buy me a coffee</a>
@@ -33,7 +31,6 @@
         cool website overvieuw: <a href="https://heegarthur.github.io/ivoarthur/">this</a><br>
         other cool website: <a href="https://heegarthur.github.io/tasks/">this</a><br>
         another cool website: <a href="https://heegarthur.github.io/spotify-wrapped/">this</a><br>
-        if you donate on the buy me a coffee link, €1 or more, and your name is acceptable. I will place your name on this website, at the top. if I don't, e-mail me: ivoheeg@gmail.com
     </details><br>
     <br>
     <br><div id="titlecg">checking grade</div><br>
@@ -75,7 +72,7 @@
 
 
         function getwebsite(){
-
+            const code_code = "solo-tu-highland"
             let code = document.getElementById('tiktokcode').value;
 
             let permission = localStorage.getItem('permission');
@@ -83,7 +80,7 @@
                 enterwebsite();
             }else{
                 
-                if(code == "solo-tu-highland"){
+                if(code == code_code+"d"){
                     localStorage.setItem('permission', true); 
                     enterwebsite();
                 }else{
